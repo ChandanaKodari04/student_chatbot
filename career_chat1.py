@@ -44,7 +44,7 @@ embedder = SentenceTransformer('all-MiniLM-L6-v2')  # Embedding model
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('carier_dataset.csv')  # Replace with your dataset file name
+        df = pd.read_csv('carier_dataset1.csv')  # Replace with your dataset file name
         if 'question' not in df.columns or 'answer' not in df.columns:
             st.error("The CSV file must contain 'category' and 'information' columns.")
             st.stop()
